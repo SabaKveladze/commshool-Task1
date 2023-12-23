@@ -1,0 +1,26 @@
+* {
+    box-sizing: border-box;
+}
+#wrapper header {
+    background-color: blue;
+    width: 500px;
+    border: 10px solid rgb(0, 0, 114);
+    padding: 10px;
+    color: white;
+}
+
+#wrapper main {
+ background-color: yellow;
+ width: 400px; 
+ padding: 10px;
+ margin: 5px 0px 10px 5px;
+ border: 30px solid rgb(212, 212, 0);
+}
+
+#wrapper footer{
+    background-color: blue;
+    width: 500px ;
+    border: 10px solid rgb(0, 0, 114);
+    padding: 10px;
+    color: white;
+}
