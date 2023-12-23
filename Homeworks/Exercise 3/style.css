@@ -1,0 +1,18 @@
+.firstVid {
+    margin-left: 10px;
+}
+.secondStepContainer {
+   
+   
+}
+.content {
+    display: flex;
+    width: 900px;
+    height: fit-content;
+    gap: 50px;
+}
+.audioCont{
+    display: flex;
+    width: 100%;
+    gap: 50px;
+}
