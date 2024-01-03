@@ -1,0 +1,47 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html,body {
+    width: 500px;
+    height: 700px;
+    margin: 5px 3px;
+}
+.left {
+    width: 25%;
+    height: 100%;
+    border: 1px solid black;
+   float: left;
+}
+.top {
+    width: 100%;
+    height: 30%;
+    border: 1px solid black;
+    float: right;
+}
+.bottom {
+    border: 1px solid black;
+    height: 149px;
+    width: 500px;
+    margin-top: 1px;
+    
+}
+.container {
+    display: flex;
+    height: 491px;
+    width: 100%;
+}
+.right {
+    width: 25%;
+    height: 70%;
+    border: 1px solid black;
+    float: right;
+  
+}
+.rightCont {
+    float: right;
+    width: 100%;
+    height: 490px;
+
+}
