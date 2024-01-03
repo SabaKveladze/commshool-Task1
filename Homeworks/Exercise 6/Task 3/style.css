@@ -1,0 +1,31 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+body {
+    width: 100%;
+}
+.container{
+   
+    width: calc(100% - 15px);
+    height: 180px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin: 5px;
+    border: 2px solid black;
+}
+.content {
+    background-color: red;
+    width: 150px;
+    height: 150px;
+    margin-left: 15px;
+    animation-name: Task;
+    animation-duration: 8s;
+    position: absolute;
+}
+@keyframes Task{
+    0% {left: 0;}
+    25% {left: calc(50% - 75px);}
+    100% {left:calc(100% - 180px);}
+}
