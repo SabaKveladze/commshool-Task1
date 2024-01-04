@@ -4,9 +4,8 @@
 }
 @font-face {
     font-family:"Muli";
-    src: url(img/Muli.ttf);
+    src: url(fonts/Muli.ttf);
 }
-
 
 body,html {
     display: flex;
