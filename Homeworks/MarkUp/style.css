@@ -101,7 +101,7 @@ a {
     width: 445px;
     margin: 190px 127px 25px 190px;
     display: flex;
-  
+    margin-right: 163px;
     align-items: center;
 }
 .titleContainer h1 {
@@ -124,8 +124,94 @@ a {
     width: 693px;
     height: 598px;
     flex-shrink: 0;
-    margin-right: 163px;
+
+   
 }
+.titleContainer button {
+    margin-top: 45px;
+    width: 200px;
+    height: 56px;
+    flex-shrink: 0;
+    background-color: #458FF6;
+    border-radius: 55px;
+    color: white;
+    font-family: Muli;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 60px;
+    display: flex;
+    align-items: center;
+    border: 0px;
+    justify-content: center;
+}
+.titleContainer button p {}
+.services {
+    width: 100vw; display: flex; justify-content: center;
+    align-items: center; color: #000;
+    font-family: Muli;
+    font-size: 36px;
+    margin-top: 192px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 56px; /* 155.556% */
+}
+
+.servicesRectangle {
+    width: 56px;
+    height: 2px;
+    flex-shrink: 0;
+    background-color: black; 
+    margin-top: 26px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+}
+.upperRect {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.serviceP{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    margin-bottom: 80px;
+}
+.serviceP p{
+    width: 952px;
+    height: 60px;
+    margin-top: 33px;
+    color: #7D7987;
+    text-align: center;
+    font-family: Muli;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 30px; /* 166.667% */
+}
+.optionsContainer {
+    display: flex;
+    flex-direction: column;
+    width: 1120px;
+    height: 40px;
+    margin: 0px 220px 69px 220px;
+    gap: 35px;
+}
+.upperContainer,.bottomContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 35px;
+}
+.box {
+    width: 350px;
+    height: 354px;
+    border-radius: 5%;
+    background-color: #000;
+}
+
+
 /*  
 .firstContainer {
     position: relative;
