@@ -99,11 +99,32 @@ a {
 }
 .titleContainer {
     width: 445px;
+    margin: 190px 127px 25px 190px;
+    display: flex;
+  
+    align-items: center;
 }
-.titleContainer .h1 {
+.titleContainer h1 {
     width: 427px;
     height: 112px;
     
+}
+.titleContainer p {
+    color: #7D7987;
+    font-family: Muli;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 32px; /* 152.381% */
+    margin-top: 25px;
+    width: 445px;
+    height: 96px;
+}
+.headerPic {
+    width: 693px;
+    height: 598px;
+    flex-shrink: 0;
+    margin-right: 163px;
 }
 /*  
 .firstContainer {
