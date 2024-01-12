@@ -1,15 +1,24 @@
 * {
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
 }
 @font-face {
     font-family:"Muli";
     src: url(fonts/Muli.ttf);
 }
+@font-face {
+    font-family:"Mulish";
+    src: url(fonts/Mulish.ttf);
+}
+.wrapper {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
 
+}
 html {
     height: 100%;
-    
  }
  .header {
     display: flex;
@@ -23,10 +32,8 @@ html {
     justify-content: center;
     align-items: center;
    margin-left: 191px;
-
    margin-top: 56px;
     height: 50px;
-    
 }
 .headerContainer2{
     display: flex;
@@ -37,8 +44,6 @@ html {
    margin-right: 192px;
     height: 50px;
     gap: 40px;
-    
-    
 }
 
 .logo {
@@ -65,18 +70,14 @@ html {
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    
-
 }
 
 .menu {
     flex-direction: row;
     list-style-type: none
-    
 }
 h1 {
     color: #000;
-
     font-family: Muli;
     font-size: 48px;
     font-style: normal;
@@ -87,15 +88,15 @@ a {
     text-decoration: none;
     margin: 0px 20px;
     color: gray;
-   
+    cursor: pointer;
+    text-transform: capitalize;
 }
-.home {
-    color: #1F1534;
-    font-family: Muli;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
+a:hover {
+    color: black;
+}
+
+.home a {
+    font-family: Mulish;
 }
 .titleContainer {
     width: 445px;
@@ -144,8 +145,9 @@ a {
     align-items: center;
     border: 0px;
     justify-content: center;
+    outline: none;
 }
-.titleContainer button p {}
+
 .services {
     width: 100vw; display: flex; justify-content: center;
     align-items: center; color: #000;
@@ -308,6 +310,7 @@ a {
 }
 .middleCont button,.thirdCont button {
     margin-top: 37px;
+    outline: none;
 }
 .rectangleBlck {
     width: 56px;
@@ -326,7 +329,7 @@ a {
     width: 1250px;
     flex-direction: row;
     height: 480px;
-    margin-left: 135px;
+    margin-left: 280px;
     margin-top: 220px;
 }
 .vector {
@@ -448,4 +451,219 @@ a {
 button{
     border: none;
     background: none;
+    outline: none;
 } 
+.articleText {
+    width: 100vw;
+    height: 85px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 227px;
+}
+.articleText h1{
+    color: #000;
+    font-family: Muli;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 56px;
+}
+.articleRect {
+    width: 56px;
+    height: 2px;
+    flex-shrink: 0;
+    background-color: black; 
+    margin-top: 26px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+}
+.footerCont {
+    width: 1175px;
+    height: 525px;
+    margin: 72px 240px 0px 238px;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+
+}
+.boxImg {
+    width: 370px;
+    height: 490px;
+    border-radius: 15px 25px 0px 0px;
+    
+}
+.footerBox img {
+    width: 369px;
+    height: 246px;
+    flex-shrink: 0;
+   
+}
+.footerContent h3 {
+    color: #000;
+    font-family: Muli;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px; 
+    
+    width: 251px;
+    height: 64px;
+}
+.footerContent p {
+    color: #7D7987;
+    font-family: Muli;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 28px;
+    width: 266px;
+    height: 84px;
+    margin-top: 12px;
+}
+.footerContent {
+    margin-left: 33px;
+}
+.footerContent img {
+    width: 14.143px;
+    height: 9px;
+    flex-shrink: 0;
+    margin-left: 15px;
+}
+
+.footerContent button{
+    width: 266px;
+    color: #4089ED;
+    font-family: Muli;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px;
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+    flex-direction: row;
+    
+
+}
+.viewButton {
+    color: #458FF6;
+    font-family: Muli;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 60px;
+    width: 200px;
+    height: 56px;
+    flex-shrink: 0;
+    border-radius: 55px;
+    border: 1.4px solid #458FF6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 72px;
+    background-color: white;
+}
+.viewBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+
+}
+
+footer {
+    background: linear-gradient(183deg, #67C3F3 -8.57%, #5A98F2 82.96%);
+    width: 1600px;
+    height: 432px;
+    flex-shrink: 0;
+    padding-top: 124px;
+    padding-left: 191px;
+    margin-top: 201px;
+    display: flex;
+    flex-direction: row;
+   
+}
+.footerLogo {
+    background-color: white ;
+    border-radius: 50%;
+    height: 41px;
+    width: 41px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #5B9BF3;
+
+    font-family: Muli;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;    
+}
+.footerLogoName {
+    color: #FFF;
+    font-family: Muli;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-left: 12px;
+}
+.logoContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 41px;
+    width: 160px;
+}
+
+.trafalgar-footer .p1 {
+    color: #FFF;
+    font-family: Muli;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 28px;
+    margin-top: 22px;
+    width: 391px;
+    height: 84px;
+}
+.trafalgar-footer .p2 {
+    color: #FFF;
+    font-family: Muli;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 28px; 
+    margin-top: 31px;
+    width: 391px;
+    height: 28px;
+}
+.footerInfo h3 {
+    color: #FFF;
+    font-family: Muli;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 60px; 
+}
+.footerInfo p {
+    color: #FFF;
+font-family: Muli;
+font-size: 18px;
+font-style: normal;
+font-weight: 300;
+line-height: 38px; 
+}
+.footerLeftSection {
+    display: flex;
+    flex-direction: column;
+    width: 391px;
+    height: 390px;
+}
+.footerInfo {
+    margin-left: 145px;
+}
