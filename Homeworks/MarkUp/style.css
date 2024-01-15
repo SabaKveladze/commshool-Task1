@@ -99,8 +99,7 @@ a:hover {
 .home a {
     font-family: Mulish;
 }
-.titleContainer {
-    width: 445px;
+.titleContainer {  
     margin: 190px 127px 25px 190px;
     display: flex;
     margin-right: 163px;
