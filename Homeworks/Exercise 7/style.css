@@ -433,3 +433,44 @@ line-height: normal;
     margin-top: 28px;
     margin-bottom: 0px;
 }
+.footer {
+    margin-top: 63px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 304px;
+}
+.footer img {
+    width: 138.017px;
+    height: 30px;
+    flex-shrink: 0;
+   
+}
+.footer a {
+    color: #8794BA;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.footerNav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 36px;
+    
+}
+.socialMedia {
+    
+    
+    gap: 40px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+.socialMedia img{
+    width: 20px;
+    height: 20px;
+    margin-right: 0px;
+}
