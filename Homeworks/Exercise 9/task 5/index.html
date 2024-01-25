@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 5</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+
+</head>
+<body>
+    <input id="input" type="number" placeholder="Give me any year">
+    <button onclick="leapYear()" type="submit" id="submit">Submit </button>
+</body>
+<script>
+    function leapYear() {
+    let year = document.getElementById("input").value
+
+    if( year <= 0 ){
+        alert("Please text any year")
+    }else if (year % 4 == 0 ) {
+        alert("That year is leap")
+    }else if (year % 4 != 0) {
+        alert("that year is not leap")
+    }
+}
+</script>
+</html>
