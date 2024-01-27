@@ -18,7 +18,7 @@
 
     if( year <= 0 ){
         alert("Please text any year")
-    }else if (year % 4 == 0 ) {
+    }else if (year % 4 === 0 && year % 100 !== 0 || year % 400 === 0 ) {
         alert("That year is leap")
     }else if (year % 4 != 0) {
         alert("that year is not leap")
