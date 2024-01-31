@@ -1,0 +1,70 @@
+.sliderMainContainer{
+    position: relative;
+    width: 100vw;
+    display: flex;
+    margin-top: 100px;
+    align-items: center;
+}
+.welcome-to-finanza{
+    color:  #355EFC;
+    width: fit-content;
+    text-align: center;
+    font-family: 'Mulish';
+    font-size: 16px;
+    font-style: normal;
+    padding: 10px;
+    font-weight: 400;
+    border: 1px solid white;
+    border-radius: 8px;
+    line-height: 24px; 
+}
+.sliderText{
+    gap: 25px;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 72px;
+}
+.sliderText h1 {
+    color: #011A41;
+    font-family: "Open Sans";
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 96px;
+    height: fit-content;
+    width: 57.18%;
+
+}
+.exploreBtn {
+    border-radius: 10px;
+    display: flex;
+    padding: 10px 25px;
+    align-items: flex-start;
+    gap: 10px;
+    background: #355EFC;
+    border: none;
+    color: #F5F5F5;
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+}
+.sliderImg{
+position: absolute;
+right: 0;
+top: -170px;
+}
+
+.slider-right-arrow, .slider-left-arrow {
+    position: absolute;
+    z-index: 1;
+}
+.slider-right-arrow{
+    right: 0;
+    
+}
+.slider-left-arrow{
+    left: 8px;
+}
