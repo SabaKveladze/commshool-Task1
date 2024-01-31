@@ -1,0 +1,125 @@
+.reasonWrapper{
+    margin-left: 70px;
+    margin-right: 80px;
+}
+.reasonContent{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 540px;
+    align-items: flex-start;
+    justify-content: center;
+
+}
+.reasonContainer{
+    display: flex;
+    flex-direction: row;
+    margin-top: 47px;
+   
+}
+.whyChoosing {
+    color:  #355EFC;
+    font-family: "Mulish";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: flex;
+    padding: 10px 15px;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    border-radius: 11px;
+    border: 1px solid #CAD2FC;
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.36);
+}
+.reasonContent h1{
+    align-self: stretch;
+    color:  #011A41;
+    font-family: 'Mulish';
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 58px; 
+}
+.reasonContent p {
+    align-self: stretch;
+    color:  #555;
+    font-family: 'Mulish';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; 
+}
+.reasonCardsContainer{
+    display: flex;
+    flex-direction: column;
+   gap: 24px;
+   justify-content: center;
+    padding: 20px;
+    height: 545px;
+}
+
+.reasonCard h2{
+    color: #011A41;
+    font-family: 'Mulish';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 29px; 
+    align-self: stretch;
+}
+.reasonCard p {
+    color: #555;
+    font-family: 'Mulish';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; 
+    align-self: stretch;
+}
+.reasonCard button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color:  #355EFC;
+    text-align: center;
+    font-family: 'Mulish';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; 
+    border: none;
+    background-color: transparent;
+}
+.readMoreArrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.reasonCard {
+    display: flex;
+    width: 258px;
+    height: 225px;
+    padding: 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 18px;
+    flex-shrink: 0;
+    border-radius: 15px;
+    border: 1px solid  #909DE2;
+}
+.blueReasonCard{
+    background: #355EFC;
+}
+.blueReasonCard h2,
+.blueReasonCard p ,
+ .blueReasonCard button{
+    color: white;
+ }
+ .lastReasonCard{
+    display: flex;
+    justify-content: center;
+    margin-top: 14%;
+ }
