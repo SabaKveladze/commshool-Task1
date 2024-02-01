@@ -58,6 +58,8 @@
    justify-content: center;
     padding: 20px;
     height: 545px;
+    width: 290px;
+    margin-left: 21px;
 }
 
 .reasonCard h2{
