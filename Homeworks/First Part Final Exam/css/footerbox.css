@@ -1,6 +1,98 @@
 .footerBox{
-    width: 100vw;
+   
     background-color: #011A41;
-    height: 330px;
+    height: fit-content;
     margin-top: 330px;
+    display: flex;
+    padding: 57px 74px 83px 78px;
+
+}
+
+.footerContent {
+    width: 25%;
+    
+}
+.footerBoxP{
+    color: white;
+    font-family: 'Mulish';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    display: flex;
+    gap: 5px;
+    padding:5px 0px;
+    letter-spacing: 0em;
+}
+.footerBoxInfo{
+    color: white;
+    font-family: 'Mulish';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    display: flex;
+    gap: 5px;
+    padding:5px 0px;
+    letter-spacing: 0em;
+}
+.footerBoxP:hover{
+    color: rgb(3, 146, 194);
+    font-weight: normal;
+    font-size: larger;
+    text-transform: capitalize;
+    transition: .5s;
+    cursor: pointer;
+}
+.footerContent h2 {
+    font-family: Jost;
+font-size: 24px;
+font-weight: 700;
+line-height: 29px;
+letter-spacing: 0em;
+text-align: left;
+color: #FFFFFF;
+
+
+}
+.footerSocialMedia {
+    display: flex;
+    flex-direction: row;
+    margin-top: 9px;
+    gap: 5px;
+}
+.footerSocialMedia img {
+    width: 45px;
+    height: 34px;
+}
+.signUp {
+    position: relative;
+    max-width: 214px;
+}
+.signUpInput{
+    padding: 15px 40px 15px 5px;
+    border-radius: 5px;
+    border: none;
+}
+
+.signUpBtn {
+    position: absolute;
+    border-radius: 5px;
+    padding:10px  5px;
+    background: #355EFC;
+    border: none;
+    color: white;
+    top: 5px;
+    right: 5px;
+}
+
+.newsletterP {
+    color: white;
+    font-family: 'Mulish';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    display: flex;
+    gap: 5px;
+    padding:5px 0px;
+    letter-spacing: 0em;
+    
 }

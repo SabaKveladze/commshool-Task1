@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/slider.css">
     <link rel="stylesheet" href="css/stats.css">
     <link rel="stylesheet" href="css/info.css">
+    <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/about.css">
     <link rel="stylesheet" href="css/footerbox.css">
     <link rel="stylesheet" href="css/services.css">
@@ -20,7 +21,7 @@
 
 </head>
 <body>
-    <div class="headerBackGround">
+    <div id="headerBackGround" class="headerBackGround">
         <div class="headerInfo">
             <div class="headerCont1">
                 <div class="location">
@@ -49,11 +50,22 @@
                 <img src="img/finanzaLogo.png">
                 <div class="navDiv">
                     <div class="nav">
-                        <a href="home.html">Home</a>
-                        <a href="about.html">About</a>
-                        <a href="services.html">Services</a>
-                        <a href="pages.html">Pages<span><img src="img/downArrow.png"></span></a>
-                        <a href="contact.html">Contact</a>
+                        <a class="navLinks" href="#headerBackGround">Home</a>
+                        <a class="navLinks" href="#aboutWrapper">About</a>
+                        <a class="navLinks" href="#servicesBtnAndTitle">Services</a>
+                        <div class="dropDown">
+                            <a class="navLinks" href="pages.html">Pages<span><img src="img/downArrow.png"></span></a>
+                            <div class="dropDownWrapper">
+                                <div class="dropDownContainer">
+                                    <a href="#" class="dropDownContent">Projects</a>
+                                    <a href="#" class="dropDownContent">Features</a>
+                                    <a href="#" class="dropDownContent">Team Members</a>
+                                    <a href="#" class="dropDownContent">Testimonial</a>
+                                    <a href="#" class="dropDownContent">404 Page</a>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="navLinks" href="#callBackContainer">Contact</a>
                     </div>
                     <div class="socialMediaLogos">
                         <img class="social" src="img/Fb.png">
@@ -69,7 +81,18 @@
             <div class="sliderText">
                 <p class="welcome-to-finanza">Welcome to finanza</p>
                 <h1>Your Financial Status Is Our Goal</h1>
-                <button class="exploreBtn">explore more</button>
+                <button id="exploreBtn" class="exploreBtn">explore more</button>
+                <div id="myModal" class="modal">
+
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <h2>Welcome to Our Financial Services</h2>
+                        <p>At our company, we understand that your financial well-being is of utmost importance. That's why we offer a comprehensive range of financial services tailored to meet your unique needs.</p>
+                        <p>Whether you're planning for retirement, saving for your child's education, or looking to invest for the future, our team of experienced professionals is here to provide personalized guidance and support.</p>
+                        <p>Explore our services today and take the first step towards securing your financial future.</p>
+                      </div>
+                  
+                </div>
             </div>
             <div class="sliderImg">
                 <img src="img/slider-image-card.png">
@@ -79,7 +102,7 @@
         
     </div>
 
-    <div class="aboutWrapper">
+    <div id="aboutWrapper" class="aboutWrapper">
         <div class="aboutImg"><img src="img/image card.png"></div>
         <div class="aboutCont">
             <div class="aboutText">
@@ -91,20 +114,16 @@
             </div>
             <div class="tagComponent">
                 <div class="tagsDiv">
-                    <p>Story</p>
-                    <p>Mission</p>
-                    <p>Vission</p>
+                    <p onclick="tabTextChanging(1)"  class="tagP activeTagP">Story</p>
+                    <p onclick="tabTextChanging(2)"  class="tagP">Mission</p>
+                    <p onclick="tabTextChanging(3)" class="tagP">Vision</p>
                 </div>
 
                 <div class="tagText">
-                    <p>Tempor erat elitr rebum at clita. 
-                        Diam dolor diam ipsum et tempor sit.
-                        Aliqu diam amet diam et eos labore
+                    <p class="tagTextP">
                     </p>
-                    <p>
-                        Diam dolor diam ipsum et tempor sit. 
-                        Aliqu diam amet diam et eos labore. 
-                        Clita erat ipsum et lorem et sit
+                    <p class="tagTextP">
+                       
                     </p>
                 </div>
             </div>
@@ -210,26 +229,26 @@
             </div>
         </div>
     </div>
-    <div class="servicesBtnAndTitle">
+    <div id="servicesBtnAndTitle" class="servicesBtnAndTitle">
         <button>Our Services</button>
         <h1>Awesome Financial Services For Business</h1>
     </div>
-    <div class="servicesContainer">
+    <div  class="servicesContainer">
         <div class="categories">
-            <div class="firstChildInCategories">
-                <img src="img/white_menu.png">
+            <div class="categoriesContent">
+               <img src="img/menu_icon.svg">
                 <p>Financial Planning</p>
             </div>
             <div class="categoriesContent">
-                <img src="img/icon _menu.png">
+                <img src="img/menu_icon.svg">
                 <p>Financial Planning</p>
             </div>
             <div class="categoriesContent">
-                <img src="img/icon _menu.png">
+                <img src="img/menu_icon.svg">
                 <p>Financial Planning</p>
             </div>
             <div class="categoriesContent">
-                <img src="img/icon _menu.png">
+                <img src="img/menu_icon.svg">
                 <p>Financial Planning</p>
             </div>
         </div>
@@ -258,25 +277,73 @@
                 <button class="readMoreBtn">Read More</button>
         </div>
     </div>
-    <div class="blueBackground"></div>
-    <div class="callBackContainer"> 
+    <div class="blueBackground">
+        <div id="callBackContainer" class="callBackContainer"> 
         <button class="getInTouch">Get In Touch</button>
         <h1>Request A Call-Back</h1>
-        <form class="submitForm">
+
+        <form  class="submitForm">
             <div class="inputContainer">
-                <input type="text" placeholder="Your Name" required>
-                <input type="email" placeholder="Your Email"required>
+                <input name="name" type="text" placeholder="Your Name" required>
+                <input name="email" type="email" placeholder="Your Email"required>
             </div>
             <div class="inputContainer">
-                <input type="number" placeholder="Your Phone"required>
-                <input type="text" placeholder="Your Subject"required>
+                <input name="mobileNumber" inputmode="numeric" class="telNom"  
+                onchange="numberInputValidation(this)" minlength="13" maxlength="13" 
+                 value="+995" type="text" placeholder="Your Phone" required >
+
+                <input name="subject" class="subjectInput" minlength="5" type="text" placeholder="Your Subject"required>
             </div>
-            <input class="messageInput" type="text" placeholder="Message"required>
-            <button type="submit" class="submitBtn">submit now</button>
+            <textarea name="textarea" class="messageInput" placeholder="Message" required></textarea>
+            <button name="submit" type="submit" class="submitBtn">submit now</button>
         </form> 
+
     </div>
+    </div>
+    
     <div class="footerBox">
-        <div class="officeLocation"></div>
+        <div class="footerContent">
+            <h2>Our Office</h2>
+            <p class="footerBoxInfo"><span><img src="img/whiteLocationPin.png"></span> 123 Street, New York, USA</p>
+            <p class="footerBoxInfo"><span><img src="img/whitePhoneIcon.png"></span> +012 345 67890</p>
+            <p class="footerBoxInfo"><span><img src="img/whiteEmailIcon.png"></span>info@example.com</p>
+            <div class="footerSocialMedia">
+                <img src="img/whiteTwitterIcon.png">
+                <img src="img/whiteYoutube.png">
+                <img src="img/whiteFb.png">
+                <img src="img/whiteLinkedin.png">
+            </div>
+
+        </div>
+        <div class="footerContent">
+            <h2>Services</h2>
+            <p class="footerBoxP"><span><img src="img/whiteArrowRight.png"></span>Financial Planning</p>
+            <p class="footerBoxP"><span><img src="img/whiteArrowRight.png"></span>Cash Investment</p>
+            <p class="footerBoxP"><span><img src="img/whiteArrowRight.png"></span>Financial Consultancy</p>
+            <p class="footerBoxP"><span><img src="img/whiteArrowRight.png"></span>Business Loans</p>
+            <p class="footerBoxP"><span><img src="img/whiteArrowRight.png"></span>Business Analysis</p>
+        </div>
+        <div class="footerContent">
+            <h2>Quick Links</h2>
+            <p class="footerBoxP"><span><img src="img/whiteArrowRight.png"></span>About Us</p>
+            <p class="footerBoxP"><span><img src="img/whiteArrowRight.png"></span>Contact Us</p>
+            <p class="footerBoxP"><span><img src="img/whiteArrowRight.png"></span>Our Services</p>
+            <p class="footerBoxP"><span><img src="img/whiteArrowRight.png"></span>Terms & Condition</p>
+            <p class="footerBoxP"><span><img src="img/whiteArrowRight.png"></span>Support</p>
+        </div>
+        <div class="footerContent">
+            <h2>Newsletter</h2>
+            <p class="newsletterP">Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
+            <div class="signUp">
+                <input class="signUpInput" type="email" placeholder="Your Email">
+                <button class="signUpBtn">SignUp</button>
+            </div>
+        </div>
     </div>
+    <footer>
+        <p>© <a href="https://themewagon.github.io/finanza/index.html">Your Site Name</a>, All Right Reserved.</p>
+        <p class="footerRightP">Designed By HTML Codex Distributed By ThemeWagon</p>
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>
