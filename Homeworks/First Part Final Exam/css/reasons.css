@@ -126,3 +126,10 @@
     justify-content: center;
     margin-top: 14%;
  }
+
+ @media only screen and (max-width: 1150px) {
+    .reasonCard{
+        width: 150px;
+        height: fit-content;
+    }
+ }

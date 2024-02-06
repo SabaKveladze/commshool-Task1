@@ -170,3 +170,18 @@
 .readMoreBtn:hover {
     background: #0331eb;
 }
+@media only screen and (max-width: 1250px) {
+    .servicesContainer{
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .categoriesContent{
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        border: 1px solid #909DE2;
+        padding: 15px 25px 15px 15px;
+        border-radius: 10px;
+    }
+}

@@ -96,3 +96,10 @@ color: #FFFFFF;
     letter-spacing: 0em;
     
 }
+@media only screen and (max-width: 768px) {
+    .footerBox{
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+}

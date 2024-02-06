@@ -24,8 +24,27 @@ window.onclick = function(event) {
 
 
 
+let currentSlide = 0;
+const slides = document.querySelectorAll('.sliderImg img');
+const totalSlides = slides.length;
+
+function showSlide(n) {
+    slides.forEach(slide => slide.style.display = 'none');
+    slides[n].style.display = 'block';
+}
+
+function nextSlide() {
+    currentSlide = (currentSlide + 1) % totalSlides;
+    showSlide(currentSlide);
+}
 
 
+function prevSlide() {
+    currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+    showSlide(currentSlide);
+}
+
+showSlide(currentSlide);
 
 
 
@@ -43,7 +62,7 @@ function numberInputValidation(input){
     
 }
 const tagp = document.getElementsByClassName("tagP") 
-const tagTextp = document.getElementsByClassName("tagTextP") 
+const tagTextp  = document.getElementsByClassName("tagTextP") 
 
 function tabTextChanging(index){
 

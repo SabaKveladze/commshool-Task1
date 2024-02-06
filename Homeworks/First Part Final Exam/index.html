@@ -27,8 +27,8 @@
                 <div class="location">
                     <img class="headerImg" src="img/locationIcon.png">
                     <p>123 Street, New York, USA</p>
-                </div>
-                <div class="clock">
+                   </div>              
+                   <div class="clock">
                     <img class="headerImg" src="img/ClockIcon.png">
                     <p>9.00 am - 9.00 pm</p>
                 </div>
@@ -76,8 +76,8 @@
             </div>
         </div>
         <div class="sliderMainContainer">
-            <img class="slider-left-arrow" src="img/slider-button-left.png">
-            <img class="slider-right-arrow" src="img/slider-button-right.png">
+            <img onclick="prevSlide()" class="slider-left-arrow" src="img/slider-button-left.png">
+            <img onclick="nextSlide()" class="slider-right-arrow" src="img/slider-button-right.png">
             <div class="sliderText">
                 <p class="welcome-to-finanza">Welcome to finanza</p>
                 <h1>Your Financial Status Is Our Goal</h1>
@@ -95,7 +95,8 @@
                 </div>
             </div>
             <div class="sliderImg">
-                <img src="img/slider-image-card.png">
+                <img class="slider1 slider" src="img/slider-image-card.png">
+                <img class="slider2 slider" src="img/sliderImg2.png">
             </div>
             
         </div>
@@ -132,7 +133,8 @@
 
     </div>
     <div class="infoWrapper">
-        <div class="infoContainer">
+        <div class="infoContainerParent">
+            <div class="infoContainer">
                 <div class="infoCard">
                     <img src="img/close.png">
                     <div class="infoText">
@@ -158,6 +160,8 @@
 
                 </div>
         </div>
+        </div>
+        
     </div>
 
     <div class="statsContainer">

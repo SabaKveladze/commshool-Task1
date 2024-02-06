@@ -7,7 +7,8 @@
 .aboutImg {
     width: 48.7%;
     margin-right: 24px;
-    
+    display: flex;
+    justify-content: flex-end;
 }
 .aboutBtn {
     border-radius: 11px;
@@ -40,6 +41,7 @@
     margin-top: 37px;
 
 }
+
 .aboutText h1 {
     color: #011A41;
     font-family: Jost;
@@ -111,4 +113,70 @@
     border-top: 1px solid #DEE2E6;
     border-bottom: none;
     cursor: pointer;
+}
+@media only screen and (max-width: 600px) {
+    .aboutImg{
+        width: 250px;
+        height: 300px;
+    }
+    .tagText p {
+        color:  #555;
+        font-family: 'Mulish';
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px; 
+    }
+    .aboutText h1 {
+        color: #011A41;
+        font-family: Jost;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 50px;
+        align-self: stretch;
+    }
+    .aboutText p {
+        width: fit-content;
+        height: fit-content;
+        color: #555;
+        font-family: 'Mulish';
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        align-self: stretch;
+        line-height: 20px; 
+        margin-bottom: 74px;
+    }
+    .tagP {
+        color: #555;
+        font-family: "Mulish";
+        font-size: 12px;
+        font-style: normal;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        font-weight: 400;
+        text-align: center;
+        width: 113px;
+        line-height: 20px; 
+        border-radius: 5px 5px 0px 0px;
+        border-bottom: 1px solid #DEE2E6;
+    }
+
+}
+@media only screen and (max-width: 1100px) {
+    .aboutWrapper{
+        flex-direction: column;
+        height: fit-content;
+    }
+    .aboutImg img,.aboutText {
+        width: 100%;
+    }
+    .aboutText h1 {
+        font-size: 40px;
+    }
+    .aboutText p{
+        font-size: 14px;
+    }
+    
 }
