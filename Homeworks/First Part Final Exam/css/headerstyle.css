@@ -63,7 +63,7 @@
 }
 
 .headerNav {
-    
+   height: 60px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -174,4 +174,20 @@
     right: -55px;
     z-index: 11;
 
+}
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(41, 41, 41, 0.6);
+    z-index:10;
+}
+.inActive{display: none;}
+@media only screen and (max-width: 1000px) {
+    .navDiv{
+        display: none;
+    }
 }

@@ -178,5 +178,8 @@
     .aboutText p{
         font-size: 14px;
     }
+    .tagText{
+        width: 80vw;
+    }
     
 }

@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/stats.css">
     <link rel="stylesheet" href="css/info.css">
     <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/burger.css">
     <link rel="stylesheet" href="css/about.css">
     <link rel="stylesheet" href="css/footerbox.css">
     <link rel="stylesheet" href="css/services.css">
@@ -21,8 +22,42 @@
 
 </head>
 <body>
+    <div class="overlay ">
+
+    </div>
+    <div class="burgerMenu"> 
+        <div class="burgerNavContainer">
+            <img class="finanzaLogo" src="img/finanzaLogo.png">
+            <div class="burgerNavDiv">
+                <div class="burgerNav">
+                    <a class="burgerNavLinks" href="#headerBackGround">Home</a>
+                    <a class="burgerNavLinks" href="#aboutWrapper">About</a>
+                    <a class="burgerNavLinks" href="#servicesBtnAndTitle">Services</a>
+                    <div class="burgerDropDown">
+                        <a class="burgerNavLinks burgerPages">Pages<span><img src="img/downArrow.png"></span></a>
+                        <div class="burgerDropDownWrapper">
+                            <div class="burgerDropDownContainer">
+                                <a href="#" class="burgerDropDownContent">Projects</a>
+                                <a href="#" class="burgerDropDownContent">Features</a>
+                                <a href="#" class="burgerDropDownContent">Team Members</a>
+                                <a href="#" class="burgerDropDownContent">Testimonial</a>
+                               <a href="#" class="burgerDropDownContent">404 Page</a>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="burgerNavLinks" href="#callBackContainer">Contact</a>
+                </div>
+                <div class="burgerSocialMediaLogos">
+                    <img class="burgerSocial" src="img/Fb.png">
+                    <img class="burgerSocial" src="img/twitter.png">
+                    <img class="burgerSocial" src="img/linkedin.png">
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div id="headerBackGround" class="headerBackGround">
-        <div class="headerInfo">
+        <!-- <div class="headerInfo">
             <div class="headerCont1">
                 <div class="location">
                     <img class="headerImg" src="img/locationIcon.png">
@@ -43,25 +78,29 @@
                     <p>+012 345 6789</p>
                 </div>
             </div>
-        </div> 
-        <div class="wrapper">
+        </div>  -->
+         <div class="wrapper">
             
             <div class="headerNav">
-                <img src="img/finanzaLogo.png">
+                <div><img class="finanzaLogoImg" src="img/finanzaLogo.png"></div>
+                
+                <div onclick="givingActiveClass()" class="burgerMenuIcon">
+                        <img src="img/menu_icon.svg">
+                    </div>
                 <div class="navDiv">
                     <div class="nav">
                         <a class="navLinks" href="#headerBackGround">Home</a>
                         <a class="navLinks" href="#aboutWrapper">About</a>
                         <a class="navLinks" href="#servicesBtnAndTitle">Services</a>
                         <div class="dropDown">
-                            <a class="navLinks" href="pages.html">Pages<span><img src="img/downArrow.png"></span></a>
+                            <a class="navLinks">Pages<span><img src="img/downArrow.png"></span></a>
                             <div class="dropDownWrapper">
                                 <div class="dropDownContainer">
                                     <a href="#" class="dropDownContent">Projects</a>
                                     <a href="#" class="dropDownContent">Features</a>
                                     <a href="#" class="dropDownContent">Team Members</a>
                                     <a href="#" class="dropDownContent">Testimonial</a>
-                                    <a href="#" class="dropDownContent">404 Page</a>
+                                   <a href="#" class="dropDownContent">404 Page</a>
                                 </div>
                             </div>
                         </div>
@@ -72,9 +111,13 @@
                         <img class="social" src="img/twitter.png">
                         <img class="social" src="img/linkedin.png">
                     </div>
+                    
                 </div>
             </div>
-        </div>
+        </div> 
+        
+        
+
         <div class="sliderMainContainer">
             <img onclick="prevSlide()" class="slider-left-arrow" src="img/slider-button-left.png">
             <img onclick="nextSlide()" class="slider-right-arrow" src="img/slider-button-right.png">

@@ -23,6 +23,7 @@
     display: inline-flex;
     flex-direction: column;
     align-items: flex-start;
+    z-index: 6;
     margin-left: 100px;
 }
 .sliderText h1 {
@@ -63,7 +64,7 @@ top: -170px;
 
 .slider-right-arrow, .slider-left-arrow {
     position: absolute;
-    z-index: 1;
+    z-index: 7;
 }
 .slider-right-arrow{
     right: 0; 
@@ -133,12 +134,13 @@ top: -170px;
     cursor: pointer;
   }
 
-  .slider2 {
+  .slider {
     overflow: hidden;
     position: absolute;
     top: 50px;
     right: 15%;
     height: 500px;
+    z-index: 5;
   }
 .slider{
   animation: sliderActive 1.5s forwards;
@@ -157,13 +159,18 @@ top: -170px;
     .slider{
       width: 600px;
       height: 450px;
-      top: 300px;
+      top: 100px;
     }
   }
 
-  @media only screen and (max-width: 1000px) {
+  @media only screen and (max-width: 700px) {
     .sliderText h1 
     {
-      font-size: 40px;
+      font-size: 25px;
+    }
+    .slider{
+      height: 300px;
+      top: 200px;
+      width: 450px;
     }
   }

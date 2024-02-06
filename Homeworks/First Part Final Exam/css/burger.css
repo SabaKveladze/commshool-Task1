@@ -1,0 +1,111 @@
+.burgerMenu {
+    height: 150vw;
+    width: 190px;
+    position: fixed;
+    background-color: beige;
+    display: none;
+    z-index: 8;
+    flex-direction: column;
+    right: 0;
+    z-index: 15;
+    top: 0;
+    
+}
+
+.burgerMenuIcon:hover img {
+    border: 2px solid rgb(164, 164, 164);
+}
+.burgerMenuIcon{
+    z-index: 16;
+    margin-bottom: 10px;
+
+}
+.burgerMenuIcon img{
+    width: 30px;
+    top: 10px;
+    align-items: center;
+    padding: 5px;
+    right: 10px;
+    height: 20px;
+    display: none;
+    z-index: 16;
+    filter: brightness(0) saturate(100%) invert(14%) sepia(100%) saturate(3407%) hue-rotate(230deg) brightness(109%) contrast(129%);
+}
+.burgerNav{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 20px;
+   
+    
+}
+.burgerSocialMediaLogos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+.burgerNavContainer{
+    display: flex;
+    gap: 15px;
+    border-radius: 10px;
+    flex-direction: column;
+}
+.finanzaLogo{
+    width: 150px;
+}
+.burgerNavLinks{
+    color: #355EFC;
+    text-align: center;
+    font-family: 'Mulish';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-decoration: none;
+}
+.burgerDropDown{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.burgerDropDownContainer{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    border: 1px solid #909DE2;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.burgerDropDownWrapper{
+    display: none;
+    flex-direction: column;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 5px;
+    padding: 5px 0px;
+    padding-top: 20px;
+    margin-left: 40px;
+
+}
+.burgerDropDownWrapper a {
+    text-decoration: none;
+    color: rgb(0, 179, 255);
+}
+.burgerDropDownWrapper:hover a{
+    border: 1px solid greenyellow;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 1000px) {
+    .burgerMenuIcon img {
+        display: block;
+        position: fixed;
+        z-index: 9;
+    }
+    .active{
+        display: block;
+    }
+}

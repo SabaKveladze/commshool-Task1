@@ -128,8 +128,39 @@
  }
 
  @media only screen and (max-width: 1150px) {
+    
+ }
+ @media only screen and (max-width: 1150px) {
+    .reasonContainer{
+        flex-direction: column;
+        
+    }
     .reasonCard{
         width: 150px;
         height: fit-content;
+    }
+    .lastReasonCard{
+        left: 0px;
+    }
+    .reasonContent h1 {
+        font-size: 30px;
+        width: 80vw;
+    }
+    .reasonContent p {
+        width: 80vw;
+        font-size: 12px;
+    }
+    .exploreBtn {
+        margin-bottom: 40px;
+    }
+    .reasonContent{
+        width: fit-content;
+    }
+    
+ }
+ @media only screen and (max-width: 650px) {
+    .lastReasonCard{
+        margin-left: 15%;
+        margin-top: 55px;
     }
  }

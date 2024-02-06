@@ -54,3 +54,44 @@
 .lastInfoCard {
     border-right: none;
 }
+
+@media only screen and (max-width: 1250px) {
+      
+
+.infoCard img {
+    width: 35px;
+    height: 35px;
+}
+.infoText {
+    gap: 17px;
+    display: flex;
+    flex-direction: column;
+}
+.infoText h4 {
+    color: #011A41;
+    font-family: 'Mulish';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 29px; 
+}
+.infoText p {
+    color:#555;
+    font-family: 'Mulish';
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; 
+    }
+    .infoContainer{
+        padding: 12px;
+        height: fit-content;
+        gap: 5px;
+        width: 90vw;
+    }
+    .infoCard{
+        height: fit-content;
+        padding: 18px;
+        gap: 5px
+    }
+}

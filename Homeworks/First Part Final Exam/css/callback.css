@@ -105,10 +105,10 @@
 }
 @media only screen and (max-width: 600px) {
     .callBackContainer{
-        
-        
         gap: 10px;
+        width: fit-content;
        }
+       
        .messageInput{
         width: 85%;
        }

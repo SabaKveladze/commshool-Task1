@@ -7,6 +7,31 @@ let btn = document.getElementById("exploreBtn");
 
 let span = document.getElementsByClassName("close")[0];
 
+const overlay = document.querySelector(".overlay")
+
+const finanzaLogoImg = document.querySelector(".finanzaLogoImg")
+
+const burgerMenuToggle = document.querySelector(".burgerMenu")
+const burgerMenuIcon = document.querySelector(".burgerMenuIcon")
+
+function givingActiveClass(){
+    burgerMenuToggle.classList.toggle("active")
+    overlay.classList.toggle("active")
+    finanzaLogoImg.classList.toggle("inActive")
+}
+
+const burgerDropDownToggle = document.querySelector(".burgerDropDownWrapper")
+const burgerPages= document.querySelector(".burgerPages")
+burgerPages.addEventListener("click", () => {
+    burgerDropDownToggle.classList.toggle("active")
+})
+
+
+overlay.addEventListener("click", () => {
+    burgerMenuToggle.classList.toggle("active")
+    overlay.classList.toggle("active")
+    finanzaLogoImg.classList.toggle("inActive")
+})
 
 btn.onclick = function() {
   modal.style.display = "block";
@@ -95,3 +120,4 @@ function checkActive(){
     }
 }
 tabTextChanging(1)
+
