@@ -190,4 +190,7 @@
     .navDiv{
         display: none;
     }
+    .headerInfo{
+        display: none;
+    }
 }

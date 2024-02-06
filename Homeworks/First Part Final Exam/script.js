@@ -6,7 +6,7 @@ let btn = document.getElementById("exploreBtn");
 
 
 let span = document.getElementsByClassName("close")[0];
-
+const headerInfo = document.querySelector(".headerInfo")
 const overlay = document.querySelector(".overlay")
 
 const finanzaLogoImg = document.querySelector(".finanzaLogoImg")
@@ -18,6 +18,7 @@ function givingActiveClass(){
     burgerMenuToggle.classList.toggle("active")
     overlay.classList.toggle("active")
     finanzaLogoImg.classList.toggle("inActive")
+    headerInfo.classList.toggle("inActive")
 }
 
 const burgerDropDownToggle = document.querySelector(".burgerDropDownWrapper")
@@ -31,6 +32,7 @@ overlay.addEventListener("click", () => {
     burgerMenuToggle.classList.toggle("active")
     overlay.classList.toggle("active")
     finanzaLogoImg.classList.toggle("inActive")
+    headerInfo.classList.toggle("Inactive")
 })
 
 btn.onclick = function() {
